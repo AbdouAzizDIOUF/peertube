@@ -1,0 +1,8 @@
+[peertube]
+#définissez le nom d'utilisateur et le nom d'hôte que vous utilisez pour la connexion ssh et spécifiez le domaine
+myuser@example.com  domain=example.com  cache_size_gb=15    letsencrypt_contact_email=your@email.com
+#vous pouvez également utiliser un hôte défini dans votre configuration ssh
+myserver            domain=example.com  cache_size_gb=15    letsencrypt_contact_email=your@email.com
+
+[all:vars]
+ansible_connection=ssh
